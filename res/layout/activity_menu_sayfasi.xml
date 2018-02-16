@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="iersinyavas.bm.proje.konumbazlihatirlatici.MenuSayfasi" >
+
+
+
+    <Button
+        android:id="@+id/servisi_baslat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/servisi_baslat_text" />
+
+    <Button
+        android:id="@+id/servisi_durdur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/servisi_baslat"
+        android:layout_below="@+id/servisi_baslat"
+        android:text="@string/servisi_durdur_text" />
+    
+    <Button
+        android:id="@+id/konum_kontrol_servisini_baslat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/servisi_durdur"
+        android:text="Konum Kontrol Servisini Başlat" />
+
+    <TextView
+        android:id="@+id/konum_bilgisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/konum_ekle"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/konum_kontrol_servisini_baslat"
+        android:hint=" Konum bilgisi gösterilecek..."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/konum_ekle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/konum_bilgisi"
+        android:text="@string/konum_ekle_text" />
+
+    <EditText
+        android:id="@+id/kullanici_mesaji"
+        android:hint="Kulanıcı Mesajı"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/konum_ekle"
+        android:layout_alignRight="@+id/konum_ekle"
+        android:layout_below="@+id/konum_ekle"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <ListView
+        android:id="@+id/lvKayitlar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bKayitlariGetir"
+        android:layout_below="@+id/bKayitlariGetir" >
+    </ListView>
+
+    <Button
+        android:id="@+id/bKayitlariGetir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/kullanici_mesaji"
+        android:layout_below="@+id/kullanici_mesaji"
+        android:text="Konumları Göster" />
+
+</RelativeLayout>

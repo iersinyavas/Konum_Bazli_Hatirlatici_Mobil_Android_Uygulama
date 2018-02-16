@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">Konum Bazli Hatirlatici</string>
+    <string name="title_activity_menu">Menu</string>
+    
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu_sayfasi">MenuSayfasi</string>
+    <string android:id="@+id/string1" name="servisi_baslat_text" android:layout_width="wrap_content" android:layout_height="wrap_content">Servisi Başlat</string>
+    <string android:id="@+id/string1" name="servisi_durdur_text" android:layout_width="wrap_content" android:layout_height="wrap_content">Servisi Durdur</string>
+    <string android:id="@+id/string1" name="konum_ekle_text" android:layout_width="wrap_content" android:layout_height="wrap_content">Konum Ekle </string>
+    <string name="title_activity_alarm_sayfasi">AlarmSayfasi</string>
+    <string android:id="@+id/string1" android:layout_width="wrap_content" android:layout_height="wrap_content" name="title_activity_kayitlar">Kayitlar</string>
+
+</resources>
